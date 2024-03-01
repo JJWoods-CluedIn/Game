@@ -1,3 +1,5 @@
+using Game.Game;
+
 public class ExampleStrategy : IStrategy
 {
     public string Author => "Default";
@@ -7,7 +9,7 @@ public class ExampleStrategy : IStrategy
         return TurnAction.Cooperate;
     }
 
-    public TurnAction TakeTurn(TurnLog turnLog)
+    public TurnAction TakeTurn(TurnLog turnLog, PlayerSide mySide)
     {
         return TurnAction.Cooperate;
     }

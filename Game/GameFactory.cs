@@ -1,3 +1,5 @@
+using Game.Game;
+
 public class GameFactory : IGameFactory
 {
     readonly int TurnCount;
@@ -32,8 +34,8 @@ public class GameFactory : IGameFactory
         }
         else
         {
-            player1Action = player1.TakeTurn(log);
-            player2Action = player2.TakeTurn(log);
+            player1Action = player1.TakeTurn(log, PlayerSide.Player1);
+            player2Action = player2.TakeTurn(log, PlayerSide.Player2);
         }
 
         var turn = new Turn(player1Action, player2Action);

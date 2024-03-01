@@ -1,3 +1,6 @@
+using System.Drawing;
+using Game.Game;
+
 public class Turn
 {
     public TurnAction Player1Action { get; }
@@ -49,5 +52,27 @@ public class Turn
             default:
                 throw new ArgumentOutOfRangeException("Unknown turn outcome. Cannot score");
         }
+    }
+
+    public TurnAction GetMyAction(PlayerSide mySide)
+    {
+        return mySide switch
+        {
+            PlayerSide.Player1 => Player1Action,
+            PlayerSide.Player2 => Player2Action,
+
+            _ => throw new ArgumentOutOfRangeException(nameof(mySide), mySide, null)
+        };
+    }
+    
+    public TurnAction GetOtherPlayerAction(PlayerSide mySide)
+    {
+        return mySide switch
+        {
+            PlayerSide.Player1 => Player2Action,
+            PlayerSide.Player2 => Player1Action,
+
+            _ => throw new ArgumentOutOfRangeException(nameof(mySide), mySide, null)
+        };
     }
 }
