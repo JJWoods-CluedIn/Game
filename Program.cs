@@ -20,6 +20,7 @@ void Main()
         new NickStrategy(),
         new Vengefulness(),
         new KeepCooperatingStrategy(),
+        new NickStrategy2(),
     };
 
     //Play each strategy against itself and all others
