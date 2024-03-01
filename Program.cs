@@ -21,6 +21,7 @@ void Main()
         new Vengefulness(),
         new KeepCooperatingStrategy(),
         new NickStrategy2(),
+        new JoshStrategy(),
     };
 
     //Play each strategy against itself and all others
