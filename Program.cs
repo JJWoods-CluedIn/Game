@@ -32,9 +32,9 @@ void Main()
         return new KeyValuePair<string, int>(strat1.Author, totalScore);
     });
 
-    foreach(var result in results.OrderBy(r => r.Value))
+    foreach(var result in results.OrderByDescending(r => r.Value))
     {
-        Console.WriteLine($"{result.Key} -- {result.Value}");
+        Console.WriteLine($"{result.Key,40} -- {result.Value}");
     }
 }
 
