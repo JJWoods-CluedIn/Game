@@ -14,7 +14,7 @@ namespace Game.Strategies
         public TurnAction TakeTurn(TurnLog turnLog, PlayerSide mySide)
         {
             var myScore = turnLog.GetPlayerScore(mySide);
-            var otherScore = turnLog.GetPlayerScore(mySide == PlayerSide.Player1 ? PlayerSide.Player1 : PlayerSide.Player2);
+            var otherScore = turnLog.GetPlayerScore(mySide == PlayerSide.Player1 ? PlayerSide.Player2 : PlayerSide.Player1);
 
             if (myScore <= otherScore)
             {
