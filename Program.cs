@@ -14,6 +14,7 @@ void Main()
         new RepeatOtherPlayerPreviousAnswerStrategy(),
         new AndreasStrategy(),
 		new FlipPreviousAnswerStrategy(),
+		new CheatingStrategy(),
     };
 
     //Play each strategy against itself and all others
