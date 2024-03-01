@@ -35,16 +35,12 @@ namespace Game.Strategies
                 {
                     case TurnOuctcome.BothCooperate:
                         return 3;
-                        break;
                     case TurnOuctcome.BothDefect:
                         return 1;
-                        break;
                     case TurnOuctcome.Player1Defects:
                         return side == PlayerSide.Player1 ? 5 : 0;
-                        break;
                     case TurnOuctcome.Player2Defects:
                         return side == PlayerSide.Player2 ? 5 : 0;
-                        break;
                     default:
                         throw new ArgumentOutOfRangeException();
                 }

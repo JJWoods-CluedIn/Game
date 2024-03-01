@@ -18,6 +18,7 @@ void Main()
         new CheatingStrategy(),
         new FlipPreviousAnswerStrategy(),
         new NickStrategy(),
+        new Vengefulness(),
     };
 
     //Play each strategy against itself and all others
