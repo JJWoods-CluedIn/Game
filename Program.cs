@@ -9,6 +9,7 @@ void Main()
         new ExampleStrategy(),
         new DefectStrategy(),
         new ChaosStrategy(),
+        new RepeatOtherPlayerPreviousAnswerStrategy(),
     };
 
     //Play each strategy against itself and all others
