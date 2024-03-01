@@ -13,8 +13,8 @@ void Main()
         new ChaosStrategy(),
         new RepeatOtherPlayerPreviousAnswerStrategy(),
         new AndreasStrategy(),
-		new FlipPreviousAnswerStrategy(),
-		new CheatingStrategy(),
+        new FlipPreviousAnswerStrategy(),
+        new CheatingStrategy(),
     };
 
     //Play each strategy against itself and all others

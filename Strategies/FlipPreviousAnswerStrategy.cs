@@ -24,31 +24,3 @@ public class FlipPreviousAnswerStrategy : IStrategy
                    : (last.Player1Action == TurnAction.Cooperate ? TurnAction.Defect : TurnAction.Cooperate);
     }
 }
-
-public class CheatingStrategy : IStrategy
-{
-    public string Author => "I am best";
-
-    public TurnAction TakeFirstTurn()
-    {
-        return TurnAction.Defect;
-    }
-
-    public TurnAction TakeTurn(TurnLog turnLog, PlayerSide mySide)
-    {
-        if (mySide == PlayerSide.Player1)
-        {
-            for (var i = 0; i < 2; i++)
-                turnLog.Add(new Turn(TurnAction.Defect, TurnAction.Cooperate));
-
-            return TurnAction.Defect;
-        }
-        else
-        {
-            for (var i = 0; i < 2; i++)
-                turnLog.Add(new Turn(TurnAction.Cooperate, TurnAction.Defect));
-
-            return TurnAction.Defect;
-        }
-    }
-}
