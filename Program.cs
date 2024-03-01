@@ -8,6 +8,7 @@ void Main()
     {
         new ExampleStrategy(),
         new DefectStrategy(),
+        new ChaosStrategy(),
     };
 
     //Play each strategy against itself and all others
