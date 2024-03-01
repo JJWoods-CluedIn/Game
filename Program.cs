@@ -4,7 +4,7 @@ Main();
 
 void Main()
 {
-    var gameFactory = new GameFactory(1000);
+    var gameFactory = new GameFactory(100);
 
     var strategies = new List<IStrategy>
     {
