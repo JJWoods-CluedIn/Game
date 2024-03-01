@@ -4,6 +4,8 @@
 // // </copyright>
 // // --------------------------------------------------------------------------------------------------------------------
 
+using Game.Game;
+
 public class DefectStrategy : IStrategy
 {
     public string Author => "Always Defect";
@@ -13,7 +15,7 @@ public class DefectStrategy : IStrategy
         return TurnAction.Defect;
     }
 
-    public TurnAction TakeTurn(TurnLog turnLog)
+    public TurnAction TakeTurn(TurnLog turnLog, PlayerSide mySide)
     {
         return TurnAction.Defect;
     }
