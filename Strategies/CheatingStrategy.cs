@@ -8,7 +8,7 @@ using Game.Game;
 
 public class CheatingStrategy : IStrategy
 {
-    public string Author => "I am best";
+    public string Author => "I am a cheater";
 
     public TurnAction TakeFirstTurn()
     {
