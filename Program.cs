@@ -16,9 +16,9 @@ void Main()
         new AndreasStrategy2(),
         new FlipPreviousAnswerStrategy(),
         new CheatingStrategy(),
-        new FlipPreviousAnswerStrategy(),
         new NickStrategy(),
         new Vengefulness(),
+        new KeepCooperatingStrategy(),
     };
 
     //Play each strategy against itself and all others
