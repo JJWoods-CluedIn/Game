@@ -9,8 +9,7 @@ public class Oleks4 : IStrategy
     static Oleks4()
     {
         VictoryLog[PlayerSide.Player1] = GetVictoryTurns(PlayerSide.Player1);
-        // It makes no sense, but if make it Player 1 instead of Player 2, I beat the cheating one.
-        VictoryLog[PlayerSide.Player2] = GetVictoryTurns(PlayerSide.Player1);
+        VictoryLog[PlayerSide.Player2] = GetVictoryTurns(PlayerSide.Player2);
         
         static Turn[] GetVictoryTurns(PlayerSide mySide)
         {
