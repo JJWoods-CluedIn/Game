@@ -4,7 +4,7 @@ Main();
 
 void Main()
 {
-    var gameFactory = new GameFactory(100);
+    var gameFactory = new GameFactory(1000);
 
     var strategies = new List<IStrategy>
     {
@@ -13,8 +13,10 @@ void Main()
         new ChaosStrategy(),
         new RepeatOtherPlayerPreviousAnswerStrategy(),
         new AndreasStrategy(),
+        new AndreasStrategy2(),
         new FlipPreviousAnswerStrategy(),
         new CheatingStrategy(),
+        new FlipPreviousAnswerStrategy(),
     };
 
     //Play each strategy against itself and all others

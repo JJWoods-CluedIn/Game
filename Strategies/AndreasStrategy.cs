@@ -4,7 +4,7 @@ namespace Game.Strategies
 {
     internal class AndreasStrategy : IStrategy
     {
-        public string Author => "Andreas";
+        public string Author => "Andreas - 1";
 
         public TurnAction TakeFirstTurn()
         {
