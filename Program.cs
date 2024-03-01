@@ -17,6 +17,7 @@ void Main()
         new FlipPreviousAnswerStrategy(),
         new CheatingStrategy(),
         new FlipPreviousAnswerStrategy(),
+        new NickStrategy(),
     };
 
     //Play each strategy against itself and all others
