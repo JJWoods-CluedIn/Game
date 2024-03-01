@@ -7,6 +7,7 @@ void Main()
     var strategies = new List<IStrategy>
     {
         new ExampleStrategy(),
+        new DefectStrategy(),
     };
 
     //Play each strategy against itself and all others
