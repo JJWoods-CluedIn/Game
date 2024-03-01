@@ -14,6 +14,7 @@ void Main()
         new RepeatOtherPlayerPreviousAnswerStrategy(),
         new AndreasStrategy(),
         new AndreasStrategy2(),
+        new AndreasStrategy3(),
         new FlipPreviousAnswerStrategy(),
         new CheatingStrategy(),
         new NickStrategy(),
