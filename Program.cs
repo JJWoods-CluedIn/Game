@@ -1,4 +1,6 @@
-﻿Main();
+﻿using Game.Strategies;
+
+Main();
 
 void Main()
 {
@@ -10,7 +12,8 @@ void Main()
         new DefectStrategy(),
         new ChaosStrategy(),
         new RepeatOtherPlayerPreviousAnswerStrategy(),
-        new FlipPreviousAnswerStrategy(),
+        new AndreasStrategy(),
+		new FlipPreviousAnswerStrategy(),
     };
 
     //Play each strategy against itself and all others
